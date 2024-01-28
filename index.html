@@ -28,7 +28,69 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
+        }
+
+        @media (min-width: 576px) {
+            .main-div {
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+
+            .main-div2 {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .img1 {
+                width: auto;
+            }
+
+            .main-div3 {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .main-div4 {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .main-div5 {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .img2 {
+                width: auto;
+            }
+
+            .img3 {
+                width: auto;
+            }
+
+            .sub-div2 {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+        }
+
+        .button1 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: 15px;
+            background-color: rgb(184, 182, 182);
+            border-color: rgb(184, 182, 182);
+            border-radius: 10px 10px 10px 10px;
+
+        }
+
+        .button1:hover {
+            background-color: gray;
+            border-color: gray;
+            color: white;
         }
 
         .sub-div {
@@ -67,7 +129,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
         }
 
         .main-div4 {
@@ -77,7 +138,6 @@
             background-color: rgb(186, 253, 253);
             margin: 3%;
             border-radius: 20px 20px 20px 20px;
-            flex-wrap: wrap;
         }
 
         .main-div5 {
@@ -85,7 +145,6 @@
             color: white;
             margin: 1%;
             border-radius: 10px 10px 10px 10px;
-            flex-wrap: wrap;
         }
     </style>
 
@@ -159,21 +218,21 @@
     <div style="background-color: white;" class="main-div2">
         <div style="background-color: white;" class="sub-div2">
             <p style="margin-left: 30px;">Let's create your first mockup!</p>
-            <nav class="navbar navbar-light bg-light">
-                <div class="container-fluid" style="background-color: white;">
-                    <form class="d-flex">
-                        <input style="width: 600px;" class="form-control me-2" type="search"
-                            placeholder="Search 12300+ online mockups" aria-label="Search">
-                        <button class="btn1 btn-outline-success" type="submit">All</button>
-                        <button class="btn1 btn-outline-success" type="submit">T-shirts</button>
-                        <button class="btn1 btn-outline-success" type="submit">Smartphone</button>
-                        <button class="btn1 btn-outline-success" type="submit">Magazine</button>
-                        <button class="btn1 btn-outline-success" type="submit">Books</button>
-                        <button class="btn1 btn-outline-success" type="submit">Laptop</button>
-                        <button class="btn1 btn-outline-success" type="submit">Frames</button>
-                    </form>
-                </div>
-            </nav>
+
+            <div class="container-fluid" style="background-color: white;">
+                <form class="d-flex">
+                    <input style="width: 600px;" class="form-control me-2" type="search"
+                        placeholder="Search 12300+ online mockups" aria-label="Search">
+                    <button class="button1" type="submit">All</button>
+                    <button class="button1" type="submit">T-shirts</button>
+                    <button class="button1" type="submit">Smartphone</button>
+                    <button class="button1" type="submit">Magazine</button>
+                    <button class="button1" type="submit">Books</button>
+                    <button class="button1" type="submit">Laptop</button>
+                    <button class="button1" type="submit">Frames</button>
+                </form>
+            </div>
+
         </div>
     </div>
     <br>
@@ -224,7 +283,7 @@
                 brand</p>
         </div>
         <div>
-            <img style="width: 800px; margin-left: 130px;" src="image-removebg-preview (26).png" alt="">
+            <img class="img2" style="width: 800px; margin-left: 130px;" src="image-removebg-preview (26).png" alt="">
         </div>
     </div>
     <br>
@@ -233,7 +292,8 @@
     <br>
     <div class="main-div4">
         <div>
-            <img style="height: 500px; margin-right: 200px;" src="masonry-features-picker-removebg-preview.png" alt="">
+            <img class="img3" style="height: 500px; margin-right: 200px;"
+                src="masonry-features-picker-removebg-preview.png" alt="">
         </div>
         <div>
             <h5 style="color: orangered;">FEATURES</h5>
@@ -337,7 +397,7 @@
                 <h4 style="font-size: 15px;">FAQs</h4>
                 <br>
                 <h4 style="font-size: 15px;">Knowledge hub</h4>
-                
+
 
 
             </div>
